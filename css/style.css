@@ -73,3 +73,61 @@ h3 {
     width: 66%;
     transition: width 0.1s linear;
 }
+
+/* Duration Wrapper */
+.duration-wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -25px;
+}
+
+/* Controls */
+.player-controls {
+    position: relative;
+    top: -15px;
+    left: 120px;
+    width: 200px;
+}
+
+.fas {
+    font-size: 30px;
+    color: rgb(129, 129, 129);
+    margin-right: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.fas:hover {
+    filter: brightness(80%);
+}
+
+.main-button {
+  font-size: 40px;
+  position: relative;
+  top: 3px;
+}
+
+/* Media Query: iphone (vertical) */
+@media screen and (max-width: 376px) {
+    .player-container {
+        width: 95vw;
+    }
+    
+    .img-container {
+        left: 29px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    h3 {
+        font-size: 15px;
+    }
+    
+    .player-controls {
+        top: -10px;
+        left: 100px;
+    }
+}
