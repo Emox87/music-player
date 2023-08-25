@@ -17,7 +17,7 @@ body {
 }
 
 .player-container {
-    height: 500px;
+    height: 520px;
     width: 400px;
     background: #e7e7e7;
     border-radius: 20px;
@@ -102,10 +102,58 @@ h3 {
     filter: brightness(80%);
 }
 
+.fa-volume-down,
+.fa-volume-up,
+.fa-volume-mute {
+    font-size: 15px;
+}
+
+.fa-volume-down,
+.fa-volume-mute {
+    margin-right: 10px;
+}
+
+.fa-volume-up {
+    margin-left: 10px;
+}
+
+.fa-volume-mute {
+    color: red;
+}
+
+
 .main-button {
   font-size: 40px;
   position: relative;
   top: 3px;
+}
+
+.volume-control-container {
+    display: flex;
+    align-content: space-between;
+    width: 50%;
+    position: relative;
+    left: 120px;
+    top: 5px;
+    margin-right: 0;
+}
+
+.volume-line-container {
+    height: 4px;
+    border-radius: 5px;
+    width: 90%;
+    align-self: center;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    overflow-x: hidden;
+}
+
+.volume {
+    height: 100%;
+    background: black;
+    border-radius: 5px;
+    width: 0%;
+    transition: width 0.1s linear;
 }
 
 /* Media Query: iphone (vertical) */
