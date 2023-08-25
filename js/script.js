@@ -195,6 +195,7 @@ function setProgressBar(e) {
 function muteVolume() {
     isVolumeMuted = true;
     volumeDownBtn.classList.replace('fa-volume-down', 'fa-volume-mute');
+    volumeDownBtn.setAttribute('title', 'remove mute');
     music.volume = 0;
     updateVolumeProgressBar(0);
 }
