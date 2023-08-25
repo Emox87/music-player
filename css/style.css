@@ -3,6 +3,7 @@
 
 html {
     box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
 }
 
 body {
@@ -13,36 +14,36 @@ body {
     align-items: center;
     background: #c9ced3;
     font-family: Spartan, sans-serif;
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
 .player-container {
-    height: 520px;
-    width: 400px;
+    height: 52rem;
+    width: 40rem;
     background: #e7e7e7;
-    border-radius: 20px;
-    box-shadow: 0 15px 30px 5px rgba(0, 0, 0, .3);
+    border-radius: 2rem;
+    box-shadow: 0 1.5rem 3rem .5rem rgba(0, 0, 0, .3);
 }
 
 .img-container {
-    height: 300px;
-    width: 300px;
+    height: 30rem;
+    width: 30rem;
     position: relative;
-    top: -50px;
-    left: 50px;
+    top: -5rem;
+    left: 5rem;
 }
 
 .img-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 0 5px 30px 5px rgba(0, 0, 0, .5);
+    border-radius: 2rem;
+    box-shadow: 0 .5rem 3rem .5rem rgba(0, 0, 0, .5);
 }
 
 /* TITLE */
 h2 {
-    font-size: 25px;
+    font-size: 2.5rem;
     text-align: center;
     margin: 0;
 }
@@ -58,16 +59,16 @@ h3 {
 /* PROGRESS */
 .progress-container {
     background: white;
-    border-radius: 5px;
-    height: 4px;
-    margin: 40px 20px;
+    border-radius: .5rem;
+    height: .4rem;
+    margin: 4rem 2rem;
     width: 90%;
     cursor: pointer;
 }
 
 .progress {
     background: #242323;
-    border-radius: 5px;
+    border-radius: .5rem;
     height: 100%;
     /* Change this to show progress */
     width: 0%;
@@ -79,21 +80,21 @@ h3 {
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: -25px;
+    top: -2.5rem;
 }
 
 /* Controls */
 .player-controls {
     position: relative;
-    top: -15px;
-    left: 120px;
-    width: 200px;
+    top: -1.5rem;
+    left: 12rem;
+    width: 20rem;
 }
 
 .fas {
-    font-size: 30px;
+    font-size: 3rem;
     color: rgb(129, 129, 129);
-    margin-right: 30px;
+    margin-right: 3rem;
     cursor: pointer;
     user-select: none;
 }
@@ -105,16 +106,16 @@ h3 {
 .fa-volume-down,
 .fa-volume-up,
 .fa-volume-mute {
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 .fa-volume-down,
 .fa-volume-mute {
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 .fa-volume-up {
-    margin-left: 10px;
+    margin-left: 1rem;
 }
 
 .fa-volume-mute {
@@ -123,9 +124,9 @@ h3 {
 
 
 .main-button {
-  font-size: 40px;
+  font-size: 4rem;
   position: relative;
-  top: 3px;
+  top: .3rem;
 }
 
 .volume-control-container {
@@ -133,14 +134,14 @@ h3 {
     align-content: space-between;
     width: 50%;
     position: relative;
-    left: 120px;
-    top: 5px;
+    left: 12rem;
+    top: .5rem;
     margin-right: 0;
 }
 
 .volume-line-container {
-    height: 4px;
-    border-radius: 5px;
+    height: .4rem;
+    border-radius: .5rem;
     width: 90%;
     align-self: center;
     background-color: rgb(255, 255, 255);
@@ -151,31 +152,31 @@ h3 {
 .volume {
     height: 100%;
     background: black;
-    border-radius: 5px;
+    border-radius: .5rem;
     width: 0%;
     transition: width 0.1s linear;
 }
 
 /* Media Query: iphone (vertical) */
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 37.6rem) {
     .player-container {
         width: 95vw;
     }
     
     .img-container {
-        left: 29px;
+        left: 2.9rem;
     }
     
     h2 {
-        font-size: 20px;
+        font-size: 2rem;
     }
     
     h3 {
-        font-size: 15px;
+        font-size: 1.5rem;
     }
     
     .player-controls {
-        top: -10px;
-        left: 100px;
+        top: -1rem;
+        left: 10rem;
     }
 }
